@@ -1,9 +1,9 @@
 # yt
 CLI program to grab top 20 results from your favorite terminal, and use the link for use of youtube-dl or mpv or other such CLI programs.
 
-# You should know before using this program you should know about two great CLI tools
-1) youtube-dl
-2) mpv
+# Things you should know before using this program about two great CLI tools
+1) youtube-dl (https://youtube-dl.org/)
+2) mpv (https://mpv.io/)
 
 youtube-dl is a tool that lets you grab videos and audios from a lot of sites, espcially from youtube from terminal
 
@@ -30,6 +30,8 @@ Pretty simple! Clone the repository
 $ git  clone  https://www.github.com/eatDatCode/yt.git
 
 $ cd  yt
+
+$ sudo pip install -r requirements.txt (Please make sure your pip is configured for python3 or higher)
 
 $ chmod  a+x  yt.py
 
