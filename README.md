@@ -15,9 +15,9 @@ Get the link from youtube using "yt" and download the video using "youtube-dl"
 
 Or stream online using mpv
 
-$ mpv https://www.youtube.com/watch?v=Vxie38_sde9
+$ mpv  https://www.youtube.com/watch?v=Vxie38_sde9
 
-$ youtube-dl -f 18 https://www.youtube.com/watch?v=Vxie38_sde9
+$ youtube-dl  -f  18  https://www.youtube.com/watch?v=Vxie38_sde9
 
 # Description:
   This program uses requests library to scraps first page results from youtube on any search query and gives you output
@@ -27,20 +27,28 @@ $ youtube-dl -f 18 https://www.youtube.com/watch?v=Vxie38_sde9
 
 Pretty simple! Clone the repository 
 
-$ git clone https://www.github.com/eatDatCode/yt.git
+$ git  clone  https://www.github.com/eatDatCode/yt.git
 
-$ cd yt
+$ cd  yt
 
-$ chmod a+x yt.py
+$ chmod  a+x  yt.py
 
-$ mv ./yt.py yt
+$ mv  ./yt.py  yt
 
-$ sudo mv yt /usr/bin/
+$ sudo  mv  yt  /usr/bin/
 
 That's all.
 
 Now open your terminal :
 
-$ yt (type here as you would type on the search box of youtube)
+$ yt  (type here as you would type on the search box of youtube)
 
 Adios.
+
+# some useful tips about mpv and youtube-dl
+i) $ youtube-dl -F link
+(to know the formats available for a certain video , get the format id, such m4m format has format id 140 for audios only)
+
+ii) $ mpv --ytdl-format (format from youtube-dl) link
+(This will help you to stream videos in your chosen resolution and you can even stream only audio from youtube)
+e.g: $ mpv --ytdl-format 140 link
