@@ -6,6 +6,8 @@ Author: github.com/eatDatCode
 """
 
 import sys
+import re
+
 import requests
 from bs4 import BeautifulSoup
 
@@ -19,9 +21,16 @@ def youtube(query):
 
     for i in range(len(ancors)):
         title = ancors[i].get('title')
-        href = ancors[i].get('href')
         length = durations[i].get_text()[3:]
-        link = 'https://www.youtube.com' + href
+        href = ancors[i].get('href')
+        
+        if '&list' in href:
+            href = re.sub('.*&list','list',href)
+            link = 'https://www.youtube.com/playlist?' + href
+            
+        else:
+            link = 'https://www.youtube.com' + href
+   
         result = "[%2d] %s || %s || %s " % (i+1,title,length,link)
         print(result)
         print('-'*len(result))
