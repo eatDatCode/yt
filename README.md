@@ -50,7 +50,9 @@ Adios.
 # Some options to use: 
 Use the last word of your query as an option to get customized results from youtube.
 options:
+
   $ yt  channel name channel
+  
   (This will give you option to choose channel from the list and after an option is choosen will be given at 30 playlist from that channel)
 
 # some useful tips about mpv and youtube-dl
