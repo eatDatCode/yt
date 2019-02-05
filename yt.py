@@ -1,4 +1,4 @@
-#!/usr/bin/python3.7
+#!/usr/bin/python
 """
 file: yt.py
 Author: github.com/eatDatCode
@@ -41,7 +41,7 @@ def get_user(query):
     
     count = 0
     channel = {}
-    for i in range(len(links)):
+    for i in range(20):
         user = links[i].find('a',{'class':'yt-uix-tile-link'})
         title = user.get('title')
         url = user.get('href')
