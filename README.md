@@ -1,7 +1,7 @@
 # yt
 CLI program to grab top 20 results from your favorite terminal, and use the link for use of youtube-dl or mpv or other such CLI programs.
 
-# Things you should know before using this program about two great CLI tools
+# Things you should know about two great CLI tools before using this program:
 1) youtube-dl (https://youtube-dl.org/)
 2) mpv (https://mpv.io/)
 
@@ -22,6 +22,9 @@ $ youtube-dl  -f  18  https://www.youtube.com/watch?v=Vxie38_sde9
 # Description:
   This program uses requests library to scraps first page results from youtube on any search query and gives you output
   as top 20 titles || duration || link as results.
+  
+# Requirements:
+ 1) python3 or higher
 
 # How to setup:
 
