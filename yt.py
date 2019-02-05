@@ -17,7 +17,7 @@ def youtube(query):
     ancors = soup.findAll('a',{'class':'yt-uix-tile-link'})
     durations = soup.findAll('span',{'class':'accessible-description'})
 
-    for i in range(len(ancors)):
+    for i in range(20):
         title = ancors[i].get('title')
         length = durations[i].get_text()[3:]
         href = ancors[i].get('href')
